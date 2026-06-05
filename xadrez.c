@@ -2,13 +2,16 @@
 
 int main() {
 
-    int i;
+    int i, casasTorre;
 
-    printf("Movimento da Torre:\n");
+    printf("Quantas casas a Torre deve se mover? ");
+    scanf("%d", &casasTorre);
 
-    // Torre: 5 casas para a direita
-    for(i = 1; i <= 5; i++) {
-        printf("Direita\n");
+    printf("\nMovimento da Torre:\n");
+
+    for(i = 1; i <= casasTorre; i++)
+    {
+       printf("Direita\n");
     }
 
     printf("\nMovimento do Bispo:\n");
@@ -28,6 +31,25 @@ int main() {
         printf("Esquerda\n");
         i++;
     } while(i <= 8);
+
+    printf("\nMovimento do Cavalo:\n");
+
+for(i = 1; i <= 2; i++)
+{
+    printf("Baixo\n");
+
+    int j = 1;
+
+    while(j <= 1)
+    {
+        if(i == 2)
+        {
+            printf("Esquerda\n");
+        }
+
+        j++;
+    }
+}
 
     return 0;
 }
